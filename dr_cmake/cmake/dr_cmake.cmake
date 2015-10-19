@@ -33,7 +33,7 @@ function(dr_add_gtest test_name)
 	set(target "${PROJECT_NAME}_test_${test_name}")
 	catkin_add_gtest(${target} ${ARGN})
 
-	set(local_test_list "${PROJECT_BINARY_DIR}/dr_gtests")
+	set(local_test_list  "${CMAKE_BINARY_DIR}/dr_gtests_${PROJECT_NAME}")
 	set(global_test_list "${CMAKE_BINARY_DIR}/dr_gtests")
 
 	# Delete global test list once per configure.

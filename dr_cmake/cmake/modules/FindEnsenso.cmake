@@ -1,7 +1,7 @@
 include(FindPkgConfig)
 
 find_path(Ensenso_INCLUDE_DIR
-	NAMES nxLib.h
+	NAMES ensenso/nxLib.h
 	PATHS
 		/opt/ensenso/include
 	DOC "The Ensenso include directories."

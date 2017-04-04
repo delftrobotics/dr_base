@@ -23,13 +23,12 @@ find_library(
 	DOC "The PylonUtility libraries."
 )
 
-set(Pylon_INCLUDE_DIRS ${Pylon_INCLUDE_DIR})
-set(Pylon_LIBRARIES    ${PylonBase_LIBRARY} ${PylonUtility_LIBRARY})
-
 include(FindPackageHandleStandardArgs)
 find_package_handle_standard_args(Pylon
 	FOUND_VAR Pylon_FOUND
-	REQUIRED_VARS Pylon_LIBRARIES Pylon_INCLUDE_DIRS
+	REQUIRED_VARS PylonBase_LIBRARY PylonUtility_LIBRARY Pylon_INCLUDE_DIR
 )
-
 mark_as_advanced(Pylon_FOUND)
+
+set(Pylon_INCLUDE_DIRS ${Pylon_INCLUDE_DIR})
+set(Pylon_LIBRARIES    ${PylonBase_LIBRARY} ${PylonUtility_LIBRARY})

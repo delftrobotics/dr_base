@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package format="2">
 	<name>dr_base</name>
-	<version>1.0.0</version>
+	<version>1.1.0</version>
 	<description>Delft Robotics base dependencies.</description>
 
 	<maintainer email="maarten@de-vri.es">Maarten de Vries</maintainer>
@@ -12,7 +12,4 @@
 
 	<buildtool_depend>catkin</buildtool_depend>
 	<depend>dr_cmake</depend>
-
-	<export>
-	</export>
 </package>
